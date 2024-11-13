@@ -116,13 +116,13 @@ const JoinPaper = () => {
                                 id={paper._id}
                                 name={index}
                                 onClick={(e) => handleJoin(e)}
-                                className="m-0 flex h-auto w-full justify-center bg-transparent py-3  text-lg  hover:bg-violet-900 hover:text-slate-100 dark:text-slate-100 "
+                                className="m-0 flex h-auto w-full justify-center bg-transparent py-3 text-lg hover:bg-violet-900 hover:text-slate-100 dark:text-black"
                               >
                                 Join
                               </button>
                             ) : (
                               <button
-                                className="m-0 flex h-auto w-full justify-center bg-transparent py-3  text-lg  hover:bg-red-600 hover:text-slate-100 dark:text-slate-100 "
+                                className="m-0 flex h-auto w-full justify-center bg-transparent py-3  text-lg  hover:bg-red-600 hover:text-slate-100 dark:text-black "
                                 type="button"
                                 id={paper._id}
                                 name={index}

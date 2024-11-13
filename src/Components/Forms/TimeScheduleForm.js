@@ -122,7 +122,7 @@ const TimeScheduleForm = () => {
                           key={index}
                         >
                           <select
-                            className="select-img h-[3rem] focus:outline-none dark:text-violet-50 w-full appearance-none text-center leading-6 focus:border-0 disabled:opacity-100"
+                            className="select-img h-[3rem] focus:outline-none dark:text-violet-50 w-full appearance-none text-center leading-6 focus:border-0 disabled:opacity-100 dark:text-black"
                             value={day}
                             name={key}
                             id={index}

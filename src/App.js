@@ -12,6 +12,7 @@ import { UserProvider } from "./Hooks/UserContext";
 
 // components
 import Loading from "./Components/Layouts/Loading";
+
 // layouts
 import AppLayout from "./Components/Layouts/AppLayout";
 import Layout from "./Components/Layouts/Layout";
@@ -35,9 +36,7 @@ import TimeScheduleForm from "./Components/Forms/TimeScheduleForm";
 import Login from "./Components/Forms/Login";
 
 // lazy loading user specific components
-const StaffApproval = lazy(() =>
-  import("./Components/Queries/StaffApproval")
-);
+const StaffApproval = lazy(() => import("./Components/Queries/StaffApproval"));
 const PaperForm = lazy(() => import("./Components/Forms/PaperForm"));
 const JoinPaper = lazy(() => import("./Components/Forms/JoinPaper"));
 
@@ -50,11 +49,7 @@ function App() {
           <Route path="reg_staff" element={<StaffForm />} />
           <Route path="reg_student" element={<StudentForm />} />
         </Route>
-        <Route
-          path="/dash"
-          element={<Layout />}
-          errorElement={<ErrorElement />}
-        >
+        <Route path="/dash" element={<Layout />} errorElement={<ErrorElement />}>
           <Route index element={<Dash />} />
           <Route path="paper" element={<Paper />} />
           <Route path="paper/:paper" element={<Notes />} />
@@ -101,7 +96,6 @@ function App() {
         className="toast"
         toastClassName="toast-rounded"
         bodyClassName="toast-body"
-        // progressClassName="toast-progress"
         position="bottom-right"
         autoClose={5000}
         newestOnTop={false}
